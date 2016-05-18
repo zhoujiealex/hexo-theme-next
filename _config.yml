@@ -31,6 +31,7 @@ menu:
   archives: /archives
   tags: /tags
   #commonweal: /404.html
+  guestbook: /guestbook
 
 
 # Enable/Disable menu icons.
@@ -47,6 +48,7 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  guestbook: comments
 
 
 
