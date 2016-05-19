@@ -118,6 +118,13 @@
 
     });
 
+    $(document).keydown(function(e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+        $('.popup-btn-close').click()
+     }
+    });
+
     $('.popup-btn-close').click(function(e){
       $('.popup').hide();
       $(".popoverlay").remove();
