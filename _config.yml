@@ -387,7 +387,7 @@ vendors:
 
   # Internal version: 4.4.0
   # http://fontawesome.io/
-  #fontawesome: //libs.cdnjs.net/font-awesome/4.6.3/css/font-awesome.min.css 
+  #fontawesome: //libs.cdnjs.net/font-awesome/4.6.3/css/font-awesome.min.css
   # wrong header missing: Access-Control-Allow-Origin:*
   #fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css
   fontawesome: //cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css
