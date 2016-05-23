@@ -16,7 +16,7 @@ function hookTemplate() {
     var admin = '';
 
     if (userId && (userId == CONFIG.duoshuo.userId)) {
-      admin = '<span class="duoshuo-ua-admin">' + CONFIG.duoshuo.author + '</span>';
+      admin = '<span class="this_ua admin">' + CONFIG.duoshuo.author + '</span>';
     }
 
     if (agent && /^Mozilla/.test(agent)) {

@@ -290,7 +290,7 @@ duoshuo_info:
   ua_enable: true
   admin_enable: true
   user_id: 6284895680469140000
-  admin_nickname: 博主
+  admin_nickname: Root
 
 
 # Facebook SDK Support.
