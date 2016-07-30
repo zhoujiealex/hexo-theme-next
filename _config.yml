@@ -75,7 +75,8 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
-  host: //fonts.lug.ustc.edu.cn/
+  host:
+  # host: //fonts.lug.ustc.edu.cn/
 
 
   # Global font settings used on <body> element.
@@ -239,8 +240,7 @@ auto_excerpt:
 # MathJax Support
 mathjax:
   enable: true
-  #cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-  cdn: //libs.cdnjs.net/mathjax/2.6.1-rc.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
 # Swiftype Search API Key
@@ -358,32 +358,32 @@ vendors:
   _internal: vendors
 
   # Internal version: 2.1.3
-  jquery: //libs.cdnjs.net/jquery/2.1.3/jquery.min.js
+  jquery: //cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js
 
   # Internal version: 2.1.5
   # http://fancyapps.com/fancybox/
-  fancybox: //libs.cdnjs.net/fancybox/2.1.5/jquery.fancybox.pack.js
-  fancybox_css: //libs.cdnjs.net/fancybox/2.1.5/jquery.fancybox.min.css
+  fancybox: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js
+  fancybox_css: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css
 
   # Internal version: 1.0.6
   # https://github.com/ftlabs/fastclick
-  fastclick: //libs.cdnjs.net/fastclick/1.0.6/fastclick.min.js
+  fastclick: //cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js
 
   # Internal version: 1.9.7
   # https://github.com/tuupola/jquery_lazyload
-  lazyload: //libs.cdnjs.net/jquery.lazyload/1.9.1/jquery.lazyload.min.js
+  lazyload: //cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js
 
   # Internal version: 1.2.1
   # http://VelocityJS.org
-  velocity: //libs.cdnjs.net/velocity/1.2.3/velocity.min.js
+  velocity: //cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js
 
   # Internal version: 1.2.1
   # http://VelocityJS.org
-  velocity_ui: //libs.cdnjs.net/velocity/1.2.3/velocity.ui.min.js
+  velocity_ui: //cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js
 
   # Internal version: 0.7.9
   # https://faisalman.github.io/ua-parser-js/
-  ua_parser: //libs.cdnjs.net/UAParser.js/0.7.9/ua-parser.min.js
+  ua_parser: //cdn.jsdelivr.net/ua-parser.js/0.7.10/ua-parser.min.js
 
   # Internal version: 4.4.0
   # http://fontawesome.io/
