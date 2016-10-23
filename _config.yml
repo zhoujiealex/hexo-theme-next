@@ -6,7 +6,7 @@
 favicon: /favicon.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "Software development, python, c++, coding, RTOS"
+keywords: "Software development, python, c++, coding, RTOS, Node.js, Node, hexo, DevOps, CI, CD, 运维, 分布式, 云计算"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -239,7 +239,7 @@ auto_excerpt:
 
 # MathJax Support
 mathjax:
-  enable: true
+  enable: flase
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
