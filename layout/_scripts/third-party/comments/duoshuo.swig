@@ -13,7 +13,7 @@
       ds.type = 'text/javascript';ds.async = true;
       ds.id = 'duoshuo-script';
       // ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.src = "{{ url_for(theme.js) }}/src/duoshuo-embed.js';
+      ds.src = '{{ url_for(theme.js) }}/src/duoshuo-embed.js';
       ds.charset = 'UTF-8';
       (document.getElementById('footer')
       || document.getElementsByTagName('head')[0]
