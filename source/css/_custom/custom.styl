@@ -1,1 +1,49 @@
 // Custom styles.
+
+#ds-recent-visitors .ds-avatar {
+    float: left;
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#ds-reset .ds-avatar img, .ds-avatar img {
+    width: 54px;
+    height: 54px;
+    border-radius: 27px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    box-shadow: inset 0 -1px 0 #3333sf;
+    -webkit-box-shadow: inset 0 -1px 0 #3333sf;
+    -webkit-transition: .8s;
+    -webkit-transition: -webkit-transform .8s ease-out;
+    transition: transform .8s ease-out;
+    -moz-transition: -moz-transform .8s ease-out
+}
+
+#ds-reset .ds-avatar img:hover {
+    box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 10px #fff;
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg)
+}
+
+#ds-thread #ds-reset .ds-textarea-wrapper textarea {
+    background: url(https://ww4.sinaimg.cn/small/649a4735gw1et7gnhy5fej20zk0m8q3q.jpg) right no-repeat
+}
+
+#ds-thread #ds-reset .ds-powered-by {
+    display: none
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
