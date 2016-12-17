@@ -157,7 +157,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">{{__('post.visitors')}} </span>
+               <span class="post-meta-item-text">{{__('post.visitors')}}</span><span>&nbsp;</span>
                <span class="leancloud-visitors-count"></span>°C
               </span>
           {% endif %}

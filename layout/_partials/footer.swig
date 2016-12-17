@@ -1,12 +1,23 @@
 <div class="copyright" >
   <span class="beian" style="margin-right: 10px;"><a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备16056788号</a></span>
   {% set current = date(Date.now(), "YYYY") %}
+
   &copy; {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
   <span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love">
     <i class="fa fa-{{ theme.authoricon }}"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  <span class="author" itemprop="copyrightHolder"><a href="mailto:{{ config.email }}">{{ config.author }}</a></span>
+  
+  {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
+  {% if theme.creative_commons in cc %}
+    <span class="cc-license" itemprop="license">
+        <a  style="border:0; margin: 0 5px; position: relative; top: 2px; left: 8px" href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" target="_blank" rel="external nofollow">
+        <img src="{{ url_for(theme.images) }}/cc-{{ theme.creative_commons }}.svg" alt="Creative Commons" />
+        </a>
+    </span>
+  {% endif %}
+  
 </div>
 
 {% if theme.copyright %}
