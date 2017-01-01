@@ -481,7 +481,7 @@ span.ua {
     border-left: none!important;
 }
 
-.post-body a{
+.post-body a, .post-category a {
   color: $karl-link-color;
   text-decoration: none;
   border-bottom:none;
@@ -491,7 +491,7 @@ span.ua {
   }
 }
 
-.posts-expand .copyright{
+.posts-expand .copyright {
     background-color:#F9F9F9;
     margin-top: 2em;
     border-left: 3px solid #FF1700;
@@ -504,7 +504,7 @@ span.ua {
     }
 }
 
-.footer a {
+.post-comments-count a, .footer a, .tag-cloud-tags a {
   text-decoration: none;
   border-bottom: none;
   
@@ -517,15 +517,6 @@ span.ua {
     text-align: center;
 }
 
-.tag-cloud-tags a {
-  text-decoration: none;
-  border-bottom: none;
-  
-  &:hover {
-    color: $karl-link-hover-color;
-  }
-}
-
 #posts article{
   h2, h3, h4, h5, h6 {
       padding-left: .5em;
@@ -534,3 +525,23 @@ span.ua {
       margin: .3em 0;
   }
 }
+
+.post-more-link .btn {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 15px;
+    color:  #fff;
+    background: $karl-link-color;
+    border: 2px solid $karl-link-color;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    
+    &:hover {
+    color: $karl-link-hover-color;
+    border: 2px solid $karl-link-hover-color;
+  }
+}
+
+
