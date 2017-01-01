@@ -1442,7 +1442,8 @@ function sskua(e) {
                     }
                 },
                 onError: function (e) {
-                    this.el.html("评论框出错啦(" + e.code + "): " + e.errorMessage)
+                    // hide error by karl 2017-01-02 00:01:00
+                    // this.el.html("评论框出错啦(" + e.code + "): " + e.errorMessage)
                 },
                 onload: function (t) {
                     var a = this, i = a.threadId = t.thread.thread_id, n = t.cursor, o = a.options = t.options, d = a.innerEl = p(B('<div id="ds-reset"></div>').appendTo(a.el));
