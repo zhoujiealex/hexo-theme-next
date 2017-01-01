@@ -264,6 +264,13 @@
           {% endfor %}
         </div>
       {% endif %}
+      
+      {% if is_post() %}
+      <div class="copyright">
+       <strong>本文链接: </strong>{{ url_for(post.permalink) }} </br>
+       <strong>版权声明: </strong>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/cn/" rel="external nofollow" target="_blank"> CC BY-NC-SA 4.0 CN </a>许可协议。转载请注明出处！</br>
+      </div>
+      {% endif %}
 
       {% if not is_index and (post.prev or post.next) %}
         <div class="post-nav">
