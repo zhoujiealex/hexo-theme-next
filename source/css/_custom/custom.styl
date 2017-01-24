@@ -509,7 +509,7 @@ span.ua {
   border-bottom: none;
   
   &:hover {
-    color: $karl-link-hover-color;
+    color: $karl-link-hover-color !important;
   }
 }
 
@@ -545,4 +545,46 @@ span.ua {
   }
 }
 
+
+.posts-expand .post-title-link, .posts-collapse .post-title a {
+  &:hover {
+    color: $karl-link-hover-color !important;
+  }
+}
+
+.posts-expand .post-tags a {
+  &:hover {
+    color: $karl-link-hover-color !important;
+    background: #e0e0e0;
+  }
+}
+
+.posts-expand .post-title-link {
+  display: inline-block;
+  position: relative;
+  color: $black-light;
+  border-bottom: none;
+  line-height: 1.2;
+  vertical-align: top;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color:  $karl-link-hover-color;
+    visibility: hidden;
+    transform: scaleX(0);
+    the-transition();
+  }
+
+  &:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .fa { font-size: 16px; }
+}
 
